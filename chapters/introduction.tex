@@ -1,15 +1,45 @@
 \section{Problem Statement}
 
-This section explains the problem we are solving and our motivation to do so.
+\textbf{\emph{Domain:}} Fashion e-commerce. \\\\
+\textbf{\emph{Facts and Figures:}} 
+\begin{enumerate}
+	\item Personalized shopping is the future of commerce. It is reported that on average today, at least 27\% of retail site revenue in fashion, which totals to around \$870 million, comes from personalized recommendations systems. \cite{salesforce}
+	\item In 2013, over 85\% of Amazon sales revenue came through personalized recommendations. \cite{mckinsey}
+	\item Despite all its potential, the Pakistani fashion industry is lagging behind in keeping up with such advances in personalized recommendation systems. \cite{thenewspk}
+\end{enumerate}
+\textbf{\emph{Statement:}} One of the biggest problems in fashion retail is product curation. Retailers have to spend a large amount of time to come up with different combinations of their products that would as a whole, go well as an outfit, and even then, the options aren’t really personalized. A customer buys a new shirt, brings it home, and hangs it up, only to find that the shirt stays in their closet for weeks because they’re not sure what to pair it with. This also means a loss in conversion rates and potential revenue at the side of the retailer.
 
 \section{Proposed Solution}
 
-This section gives a summary of our proposed solution, i.e. how does it solve the problem? An overview of the system is provided. A detailed description of each module of the system is presented later in Chapter ~\ref{chap:intro}.
+As already described, fashion retailers spend a lot of time manually curating their products, and according to a report published by emerj.com (database of reports on AI technology), at least 40\% of potential revenues are lost because of poor outfit recommendations. We see a business opportunity in this problem, and so the idea behind the project is to solve it by addressing the key issue, product curation, by providing expert recommendations across different clothing items to the end-consumer at the point of sale or as a standalone service.
+
+
+Our solution is a web application that would allow shoppers to visually search the catalogue of e-commerce stores by uploading pictures of outfits they like or taking a photo with their phone’s camera. Using Computer Vision, the outfit would be broken down into its constituent parts (eg. shirt, pants, belt, sneakers) and identical and/or visually similar items from the store would be shown at the same place. This would allow shoppers to quickly and conveniently shop for items they see on social media, significantly increasing conversion rate.
 
 \section{Intended User}
 
-This section outlines the target users of this system. The different types of users in our user base and their interaction with the system are described briefly.
+According to a recent study, millennials and Generation Z are the most coveted demographics for e-commerce stores. They do 60\% of their shopping online \cite{commerce360} and make more apparel purchases than other generations \cite{emarketer}. On average, they spend three hours per day on their phones, mostly on social media platforms such as Facebook and Instagram, constantly consuming and interacting with visual content.
+
+Our intended user are these audiences, and in order to appeal to them, it is essential for e-commerce stores to change the way shoppers interact with their stores. When someone sees their favourite Instagram influencer wearing an outfit that they want, searching for each piece of that outfit via text is not only cumbersome, it is inefficient and unlikely to yield accurate results. In order to allow customers to shop the same way they interact with social media i.e. via images, fashion e-commerce stores are increasingly looking to Artificial Intelligence and Computer Vision powered solutions.
+
+To ensure practicality and applicability, we have been gathering and incorporating feedback from HU faculty as well as industry professionals from Love For Data, Daraz.pk, and PCSIR.
+
+Our application would primarily provide two sets of recommendations when an item is being viewed by a user:
+\begin{enumerate}
+	\item Items \textbf{visually similar} (and of the same type eg. shirt for shirt) to that currently being viewed, increasing the likelihood that shoppers will find an item they like that is available in their size and at an agreeable price point.
+	\item Items \textbf{visually complementary} to that being viewed, allowing users to “Complete the Look”. This allows stores to upsell and increase Average Order Value (AOV).
+\end{enumerate}
+
+In addition, we will also actively look into personalized fashion recommendations based on user purchase history and general trends.
 
 \section{Key Challenges}
 
-This section mentions the key challenges that we foresee in this project and possible ways to address them.
+A few key challenges that we have identified to foresee in this project are listed below, along with possible ways to address them.
+
+\begin{enumerate}
+	\item We require a dedicated machine in one of the University’s labs for hosting our web-server and preferably also a web hosting service. A possible remedy is to take use of local hosting. However, it must be noted that this would increase difficulty in collaborating.
+	\item Similarly, unavailability of a GPU can hinder the precision of the recommendation system, which would be created entirely from scratch. A simple remedy is to resort to cloud-based services for GPUs such as AWS or Google CoLab.
+	\item Another challenge would be to clean and curate the dataset as per our requirements and domain. Pre-existing datasets (explained further in \chapter{3}) may not be exactly in usable condition out-of-the-box. Therefore, the data would then need to be scraped and cleaned manually which can be cumbersome. A remedy would be to maintain a clean storage format from the get-go.
+	\item In addition to this, lack of relevant technical knowledge on part of the team is also a challenge. This will be addressed by taking tutorials and online courses.
+	\item At the same time, insufficient knowledge and expertise in the domain of e-commerce requires us to reach out to industrial partners and professionals from Daraz and Telemart, whose unavailability at times can obstruct the smooth progression of our project.
+\end{enumerate}
