@@ -13,3 +13,5 @@
 **/*.toc
 **/auto
 
+*.gz
+report.synctex.gz
