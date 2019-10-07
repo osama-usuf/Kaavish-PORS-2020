@@ -8,10 +8,11 @@
 **/*.log
 **/*.lot
 **/*.out
-**/*.pdf
 **/*.run.xml
 **/*.toc
 **/auto
 
+*.gz
+report.synctex.gz
 *.gz
 report.synctex.gz
