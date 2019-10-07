@@ -19,7 +19,41 @@ This section describes each function/feature provided by our system. These funct
 
 \section{Non-functional Requirements}
 
-This sections mentions the specific non-functional requirements of our system. These generally address performance, scalability, safety, availability, deployment etc.
+\subsection{Performance Requirement}
+
+\begin{itemize}
+    \item The specification of the computer on which our system is hosted need to be extremely high because thousands of users might use the portal at the same time. Therefore, high performance of the computer on which the server is hosted is needed.
+    
+    \item Fetching the dashboard to view information and recommended outfits shall take no longer than 5 seconds to load the page.
+\end{itemize}
+
+\subsection{Safety Requirement}
+\begin{itemize}
+    \item The system must not halt or lag, especially during the update time and must not go down under high traffic. In order to ensure safety of the server, it is suggested that it is hosted on two computers - one kept as a backup.
+    
+    \item The system is harmless and would  not case harm to any human being.
+\end{itemize}
+
+\subsection{Security Requirement}
+\begin{itemize}
+    \item It must be ensured that only the authorized admins, with valid user credentials, have access to the data of the users in order to ensure user privacy. 
+    
+    \item The system will use databases from authentic sources and fashion stores.
+    
+    \item Any user other than the system admin can only view the information but can in no  way modify it except their personal information and their cart details.
+    
+    \item System has different two different types of users and both of them have constrained access. 
+\end{itemize}
+
+\subsection{User Documentation}
+\begin{itemize}
+    \item A user will not be provided with the manual as such but would be given some tutorials about how to use the website which would be available on the web portal. 
+\end{itemize}
+
+\subsection{Error Handling}
+\begin{itemize}
+    \item The system prevents data loss by carefully handling all expected and non-expected errors. 
+\end{itemize}
 
 \section{External Interfaces}
 
@@ -39,4 +73,6 @@ This section presents detailed use cases of our system.
 This section describes the specific dataset(s) used to build our system. An appropriate snapshot of the dataset(s) is also included. Futher details, when needed, are presented in the appendix.
 
 \section{System Diagram}
-This diagram gives a high-level view of the different components of our system and the interactions between them. Each component and the particular tools/technologies/libraries used to build it are described.
+The following diagrams gives an overview of different modules of our system.
+
+\includegraphics[width = 17cm \textwidth]{images/System_diagram.png}\\
