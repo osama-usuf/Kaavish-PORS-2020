@@ -2,7 +2,7 @@
 % https://www.overleaf.com/learn/latex/How_to_Write_a_Thesis_in_LaTeX_(Part_1):_Basic_Structure
 % reviewed by MAM
 
-\documentclass[12pt,twosided]{report}
+\documentclass[12pt]{report}
 
 \usepackage[titletoc]{appendix} % for adding appendix to TOC
 \usepackage[sorting=none]{biblatex}  % reference management
@@ -15,7 +15,7 @@
 \usepackage{tabularx}  % more control over table column width
 \usepackage{titlesec}  % customize chapter title 
 \usepackage{upquote}  % prevent mishandling of single quotes in listings
-
+\usepackage[section]{placeins} % prevent placing floats before sections
 
 % TODO: Customize the appearance of hyperref links using \hypersetup
 % See https://en.wikibooks.org/wiki/LaTeX/Hyperlinks#Customization
